@@ -63,6 +63,7 @@
   /* header */
   .header {
     height: 90vh;
+    background-attachment: none;
   }
 
   /* artikel */
