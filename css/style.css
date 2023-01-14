@@ -1,0 +1,401 @@
+/* source fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300&family=Rowdies:wght@300&family=Rubik+Vinyl&display=swap");
+
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+  color: rgb(68, 62, 62);
+}
+
+/* navbar */
+.navbar {
+  height: 50px;
+  width: 100vw;
+  padding: 0 25px;
+  position: fixed;
+  top: 0px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  height: 100%;
+  margin-left: -25px;
+  padding-left: 25px;
+  background-color: #fda301;
+  border-radius: 0px 25px 25px 0px;
+  padding-right: 20px;
+
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul a {
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+}
+
+.menu-burger {
+  display: none;
+}
+
+.navbar input {
+  display: none;
+}
+
+.logo {
+  font-size: 1.3rem;
+  transform: translateX(-60px);
+  color: #fda301;
+  cursor: pointer;
+
+  display: flex;
+  gap: 5px;
+}
+
+.logo p {
+  font-weight: bold;
+  font-family: "Rubik Vinyl", cursive;
+}
+
+/* header */
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/header.jpeg);
+  background-size: cover;
+  background-position: center;
+  color: #fffaf0;
+  padding-left: 30px;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  display: flex;
+  align-items: center;
+}
+
+.header .teks {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.teks h1 {
+  font-family: "Rowdies", cursive;
+  font-size: 2rem;
+  color: white;
+}
+
+.teks P {
+  font-family: "Poppins";
+  color: rgb(235, 230, 230);
+}
+
+.form-cari {
+  display: flex;
+}
+
+.form-cari input {
+  background-color: #fda50100;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #fda301;
+  margin-right: 5px;
+  color: white;
+  padding: 10px;
+  outline: none;
+}
+
+input::placeholder {
+  color: rgb(246, 238, 238);
+  font-size: 1rem;
+}
+
+.form-cari .cari {
+  height: 30px;
+  width: 30px;
+  background-color: #fda301;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 166, 0, 0);
+}
+
+.cari:hover {
+  border: 2px solid white;
+}
+
+.cari:active {
+  transform: scale(0.9);
+}
+
+/* artikel */
+.artikel {
+  width: 100vw;
+  height: 300px;
+  background-color: #fda301;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bg-white {
+  width: 100%;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+  color: rgb(68, 62, 62);
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.kategori {
+  width: 80%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  margin-bottom: -50px;
+  padding: 20px 0;
+
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  width: 20%;
+  height: max-content;
+  color: rgb(78, 78, 78);
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.card h2 {
+  font-weight: bold;
+  font-family: "poppins";
+  font-size: 1rem;
+}
+
+.card p {
+  font-family: "poppins";
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1rem;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: #fda301;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  color: white;
+
+  flex: 1;
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+/* berita */
+.beritas {
+  width: 100%;
+  padding: 80px 0px 30px 0px;
+  color: white;
+  position: relative;
+  /* border-bottom: 1px solid black; */
+
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.berita {
+  width: 20%;
+  overflow: hidden;
+  background-color: #050b19;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  border-radius: 5px;
+}
+
+.berita:hover {
+  transform: scale(1.1);
+}
+
+.berita img {
+  width: 100%;
+}
+
+.berita .isi-teks {
+  padding: 10px;
+}
+
+.isi-teks h2 {
+  font-family: "poppins";
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 10px 0px;
+}
+.isi-teks p {
+  font-family: "poppins";
+  font-size: 0.9rem;
+  color: rgb(148, 142, 142);
+}
+
+.lainnya {
+  width: 100%;
+  padding: 30px;
+  border-bottom: 1px solid rgb(145, 127, 127);
+  text-decoration: underline;
+  margin: 0 30px;
+  color: #050b19;
+  cursor: pointer;
+
+  display: flex;
+}
+
+/* about-contact */
+.wadah {
+  padding: 0px 30px;
+  gap: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.about {
+  flex: 1;
+}
+.wadah h1 {
+  font-size: 1.7rem;
+  /* margin-left: 50px; */
+  margin-bottom: 10px;
+}
+
+.dua-kolom {
+  column-count: 2;
+  font-family: "poppins";
+  font-size: 0.9rem;
+  color: #38383b;
+  line-height: 1.1rem;
+}
+
+.contact {
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  flex: 0.7;
+  font-family: "poppins";
+}
+
+.contact input::placeholder {
+  color: rgb(70, 67, 67);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form .name {
+  display: flex;
+  gap: 10px;
+}
+
+.form input {
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid rgb(167, 164, 164);
+  outline: none;
+  color: #38383b;
+}
+
+.form .send {
+  background-color: #fda301;
+  color: whitesmoke;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.form .send:hover {
+  border: 1px solid #050b19;
+}
+
+.form .send:active {
+  transform: scale(0.9);
+}
+/* footer */
+.footer {
+  width: 100vw;
+  background-color: #050b19;
+  margin-top: 50px;
+  border-top: #fda301 10px solid;
+}
+
+.buttom-dark {
+  color: white;
+  padding: 30px 30px 0px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttom-dark ul {
+  display: flex;
+  gap: 10px;
+}
+
+.buttom-dark ul a {
+  color: rgb(210, 204, 204);
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "poppins";
+}
+
+.buttom-dark .icon-medsos {
+  display: flex;
+  gap: 5px;
+}
+
+.buttom-dark i {
+  background-color: #000001;
+  padding: 5px;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  padding-left: 30px;
+  color: rgb(105, 104, 104);
+  padding-bottom: 30px;
+}

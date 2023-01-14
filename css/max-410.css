@@ -1,0 +1,129 @@
+@media only screen and (max-width: 410px) {
+  /* navbar */
+  .navbar {
+    padding: 0 20px;
+    width: 100vw;
+    box-sizing: border-box;
+    border-radius: 0px 0px 0px 0px;
+    background-color: black;
+  }
+
+  .menu-burger {
+    display: block;
+    order: 2;
+    font-size: 2rem;
+    color: white;
+  }
+
+  .navbar input {
+    display: block;
+    position: absolute;
+    transform: scale(2.5);
+    z-index: 2;
+    right: 30px;
+    top: 15px;
+    opacity: 0;
+  }
+
+  .logo {
+    transform: translate(0);
+    order: 1;
+  }
+
+  .navbar ul {
+    position: absolute;
+    transform: translateX(150vw);
+    height: 80vh;
+    width: 80vw;
+    top: 10vh;
+    left: 10vw;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.883);
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.967);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* gap: 50px; */
+  }
+
+  .navbar ul li {
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid orange;
+  }
+
+  .navbar input:checked ~ ul {
+    transform: translateX(0);
+  }
+
+  /* header */
+  .header {
+    height: 90vh;
+  }
+
+  /* artikel */
+  .artikel {
+    height: fit-content;
+  }
+  .bg-white {
+    font-size: 1.7rem;
+    background-color: orange;
+  }
+
+  .kategori {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .card p {
+    display: none;
+  }
+
+  .icon {
+    transform: scale(0.8);
+  }
+
+  /* berita */
+  .beritas {
+    padding: 30px 0px;
+  }
+
+  .berita {
+    width: 45%;
+  }
+
+  .lainnya {
+    padding: 0 0 30px 0px;
+    border-bottom: none;
+  }
+
+  /* about-contact */
+  .wadah {
+    flex-direction: column;
+    border-top: 1px solid rgb(161, 152, 152);
+    padding-top: 20px;
+  }
+
+  .contact {
+    width: 80vw;
+    /* flex: 1; */
+  }
+
+  .form .name {
+    flex-direction: column;
+  }
+
+  /* footer */
+  .buttom-dark {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .copyright {
+    margin-top: 20px;
+  }
+}
